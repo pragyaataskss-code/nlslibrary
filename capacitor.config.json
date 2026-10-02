@@ -1,0 +1,7 @@
+{
+  "appId": "in.ac.nls.library",
+  "appName": "NLS Library",
+  "webDir": "www",
+  "backgroundColor": "#0b1b3a",
+  "android": { "allowMixedContent": false }
+}
