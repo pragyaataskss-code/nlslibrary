@@ -2,6 +2,7 @@
 # Builds a debug APK. Needs: Node 20+, JDK 21, Android SDK (ANDROID_HOME set).
 set -euo pipefail
 cd "$(dirname "$0")"
+mkdir -p www && cp index.html www/index.html
 npm install
 cp node_modules/jsqr/dist/jsQR.js www/jsQR.js          # bundle QR decoder so scanning works offline
 [ -d android ] || npx cap add android
